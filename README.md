@@ -176,3 +176,8 @@ Port and adaptation: **Cauê Teles**.
 ## 16. Disclaimer
 
 SCC Fabric is an unofficial, independently maintained adaptation. It is not affiliated with, endorsed by or officially supported by XxRonaldxX. All original concepts and applicable intellectual property remain credited to their respective creators.
+
+## Languages / Idiomas
+
+- English: [README.md](README.md)
+- Português (Brasil): [README.pt-BR.md](README.pt-BR.md) — complete translation of this document.
