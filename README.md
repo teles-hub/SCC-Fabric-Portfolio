@@ -154,7 +154,7 @@ The commands below were executed from a fresh clone of the public repository. `b
 ./gradlew build --console=plain --no-daemon
 ```
 
-Observed result in this checkout: `BUILD SUCCESSFUL in 1m 57s`, 8 actionable tasks executed, including `compileJava`, `jar`, `remapJar`, `check` and the 13 Cobblemon binary API assertions. The build machine had JDK 27 installed; Gradle still compiled with `options.release = 21`. A GitHub Actions workflow now performs the same build on `main` with JDK 21; game-world validation is still absent.
+Observed result in this checkout: `BUILD SUCCESSFUL in 1m 57s`, 8 actionable tasks executed, including `compileJava`, `jar`, `remapJar`, `check` and the 13 Cobblemon binary API assertions. The build machine had JDK 27 installed; Gradle still compiled with `options.release = 21`. A GitHub Actions workflow now performs the same build on `main` with JDK 27 (required by the Gradle toolchain resolution); game-world validation is still absent.
 
 ## 14. Current Limitations
 
