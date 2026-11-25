@@ -2,6 +2,8 @@
 
 **An unofficial, independent Fabric port of SCC – Super Cool Calculator for Minecraft 1.21.1.**
 
+> **Resumo em português:** port não oficial do mod *SCC – Super Cool Calculator* (criado por XxRonaldxX, licença MIT) para Minecraft 1.21.1/Fabric, escrito em Java 21. Inclui redes de cabos, armazenamento, terminais, análise de receitas e autocrafting. O repositório contém apenas código-fonte: o build limpo foi executado com sucesso, mas **não houve validação em jogo** e não há release instalável. O texto abaixo permanece em inglês por ser um projeto de código aberto com créditos e licença do autor original.
+
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)](https://fabricmc.net/)
 [![Java](https://img.shields.io/badge/Java-21-orange)](https://www.oracle.com/java/)
@@ -125,6 +127,34 @@ Clone the repository and run the Gradle wrapper:
 ```
 
 The build script targets Java 21 bytecode and, on `check`, resolves the Cobblemon API artifact from Modrinth to verify binary API compatibility. No third-party JARs or bytecode dumps are committed to this repository.
+
+### Source layout
+
+| Package | Responsibility visible in the source |
+|---|---|
+| `de.scc.calculator.api` | Public seams used by optional integrations and terminals |
+| `de.scc.calculator.calc` | Recipe book, recipe sources, calculation engine, crafting plan and the independent `StackKey`, `ItemGraph`, `AnalysisJob` and `Consumption` helpers |
+| `de.scc.calculator.client` | Client lifecycle, screens and JEI transfer handler |
+| `de.scc.calculator.compat` | Optional integrations, including the Cobblemon Campfire Pot processor |
+| `de.scc.calculator.network` | Cables, storage, menus, job queue, payloads and reservation/escrow logic |
+| `de.scc.calculator.platform` | Fabric-side platform adapters and registries |
+| `de.scc.calculator.recipe`, `.registry`, `.data`, `.hooks`, `.mixin` | Recipe adapters, registration, balance data, event hooks and the single mixin |
+
+Resources under `src/main/resources` contain mod metadata, registrations, recipes, lang files, textures and bundled fonts with their OFL notices.
+
+### Reproducible verification
+
+The commands below were executed from a fresh clone of the public repository. `build` compiles all sources and runs `check`; `check` depends on `verifyCobblemonBinaryApi`, which downloads the Cobblemon 1.8.4 JAR from Modrinth into the Gradle cache and uses the local `javap` binary to assert 13 method/field signatures. The downloaded JAR is an inspection-only dependency and is never packaged into the mod JAR.
+
+```powershell
+.\gradlew.bat build --console=plain --no-daemon
+```
+
+```bash
+./gradlew build --console=plain --no-daemon
+```
+
+Observed result in this checkout: `BUILD SUCCESSFUL in 1m 57s`, 8 actionable tasks executed, including `compileJava`, `jar`, `remapJar`, `check` and the 13 Cobblemon binary API assertions. The build machine had JDK 27 installed; Gradle still compiled with `options.release = 21`. There is no GitHub Actions workflow and no game-world validation in this repository.
 
 ## 14. Current Limitations
 
