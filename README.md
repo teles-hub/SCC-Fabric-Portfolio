@@ -2,7 +2,7 @@
 
 **An unofficial, independent Fabric port of SCC – Super Cool Calculator for Minecraft 1.21.1.**
 
-> **Resumo em português:** port não oficial do mod *SCC – Super Cool Calculator* (criado por XxRonaldxX, licença MIT) para Minecraft 1.21.1/Fabric, escrito em Java 21. Inclui redes de cabos, armazenamento, terminais, análise de receitas e autocrafting. O repositório contém apenas código-fonte: o build limpo foi executado com sucesso, mas **não houve validação em jogo** e não há release instalável. O texto abaixo permanece em inglês por ser um projeto de código aberto com créditos e licença do autor original.
+> **Resumo em português:** port não oficial do mod *SCC – Super Cool Calculator* (criado por XxRonaldxX, licença MIT) para Minecraft 1.21.1/Fabric, escrito em Java 21. Inclui redes de cabos, armazenamento, terminais, análise de receitas e autocrafting. O build limpo foi executado com sucesso e a release publicada contém o JAR remapeado, mas **não houve validação em jogo**. O texto abaixo permanece em inglês por ser um projeto de código aberto com créditos e licença do autor original.
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)](https://fabricmc.net/)
@@ -102,7 +102,7 @@ Development used isolated worktrees, automated static harnesses and headless ser
 - Headless Fabric startup reaching `Done`, with no broken SCC tags or invalid cable references.
 - Partial modded headless startup with a reduced mod set; the remaining messages were attributed to upstream Cobblemon data fixers.
 
-These checks were performed in the private development workspace. The harness scripts and audit tooling are not included in this public source tree, so visitors cannot reproduce them from this checkout. This repository also does not include a GitHub Actions workflow, and no CI build has been executed here.
+These checks were performed in the private development workspace. The harness scripts and audit tooling are not included in this public source tree, so visitors cannot reproduce them from this checkout. A GitHub Actions workflow at `.github/workflows/build.yml` now runs the public `build` on pushes and pull requests to `main` and uploads the remapped JAR as an artifact; the private harnesses are still not reproduced there.
 
 The public build was executed with JDK 27 available on the build machine while the Gradle configuration retained Java 21 bytecode targeting; a JDK 21 toolchain was not installed locally.
 
@@ -154,7 +154,7 @@ The commands below were executed from a fresh clone of the public repository. `b
 ./gradlew build --console=plain --no-daemon
 ```
 
-Observed result in this checkout: `BUILD SUCCESSFUL in 1m 57s`, 8 actionable tasks executed, including `compileJava`, `jar`, `remapJar`, `check` and the 13 Cobblemon binary API assertions. The build machine had JDK 27 installed; Gradle still compiled with `options.release = 21`. There is no GitHub Actions workflow and no game-world validation in this repository.
+Observed result in this checkout: `BUILD SUCCESSFUL in 1m 57s`, 8 actionable tasks executed, including `compileJava`, `jar`, `remapJar`, `check` and the 13 Cobblemon binary API assertions. The build machine had JDK 27 installed; Gradle still compiled with `options.release = 21`. A GitHub Actions workflow now performs the same build on `main` with JDK 21; game-world validation is still absent.
 
 ## 14. Current Limitations
 
