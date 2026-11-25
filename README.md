@@ -2,7 +2,7 @@
 
 **An unofficial, independent Fabric port of SCC – Super Cool Calculator for Minecraft 1.21.1.**
 
-> **Resumo em português:** port não oficial do mod *SCC – Super Cool Calculator* (criado por XxRonaldxX, licença MIT) para Minecraft 1.21.1/Fabric, escrito em Java 21. Inclui redes de cabos, armazenamento, terminais, análise de receitas e autocrafting. O build limpo foi executado com sucesso e a release publicada contém o JAR remapeado, mas **não houve validação em jogo**. O texto abaixo permanece em inglês por ser um projeto de código aberto com créditos e licença do autor original.
+> **Resumo em português:** port não oficial do mod *SCC – Super Cool Calculator* (criado por XxRonaldxX, licença MIT) para Minecraft 1.21.1/Fabric, escrito em Java 21. Inclui redes de cabos, armazenamento, terminais, análise de receitas e autocrafting. O build limpo foi executado com sucesso e a release `v1.6.5-fabric-cv1.8.0` contém o JAR remapeado e o JAR de fontes, mas **não houve validação em jogo**. O texto abaixo permanece em inglês por ser um projeto de código aberto com créditos e licença do autor original.
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)](https://fabricmc.net/)
