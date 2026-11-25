@@ -95,12 +95,14 @@ Terminal, menu and screen classes and their recipe coverage are present in the s
 
 Development used isolated worktrees, automated static harnesses and headless server startup checks. Recorded results include:
 
-- A successful Gradle build in the private development tree, with Java 21 release targeting.
-- 71 automated harnesses and 6 static audits, all reporting zero failures.
+- A successful Gradle build from the clean public checkout: `./gradlew build`, with Java 21 bytecode targeting.
+- 71 automated harnesses and 6 static audits, all reporting zero failures in the private development workspace.
 - Headless Fabric startup reaching `Done`, with no broken SCC tags or invalid cable references.
 - Partial modded headless startup with a reduced mod set; the remaining messages were attributed to upstream Cobblemon data fixers.
 
 These checks were performed in the private development workspace. The harness scripts and audit tooling are not included in this public source tree, so visitors cannot reproduce them from this checkout. This repository also does not include a GitHub Actions workflow, and no CI build has been executed here.
+
+The public build was executed with JDK 27 available on the build machine while the Gradle configuration retained Java 21 bytecode targeting; a JDK 21 toolchain was not installed locally.
 
 These are build-time and headless checks only. They do **not** constitute gameplay validation.
 
@@ -130,7 +132,7 @@ The build script targets Java 21 bytecode and, on `check`, resolves the Cobblemo
 - Crafting, storage transactions, cable networking, wireless behavior and Cobblemon cooking remain untested in gameplay.
 - The optional JEI, EMI, Jade and Accessories integrations, and the full Cobbleverse modpack profile, were not runtime-verified.
 - The upstream Cobblemon data-fixer messages observed in a partial modded startup are external to SCC.
-- **Source completeness:** this clean publication intentionally excludes original compiled bytecode that the private development build used as a compile-time dependency for a small set of core stack-key, item-graph and analysis-job helpers. Equivalent Java source for those helpers is not included, so a fresh checkout does not compile until that source is supplied. This is a known limitation of the public source tree.
+- Independent Java implementations of the stack-key, item-graph, analysis-job and consumption helpers are included. They were written from the contracts used by the public source tree, without reusing original bytecode or internal bytecode dumps, and they allow a clean checkout to compile.
 - The project is under active development and is not a production-ready release.
 
 ## 15. License and Attribution
