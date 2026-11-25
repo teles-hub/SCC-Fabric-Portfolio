@@ -100,6 +100,8 @@ Development used isolated worktrees, automated static harnesses and headless ser
 - Headless Fabric startup reaching `Done`, with no broken SCC tags or invalid cable references.
 - Partial modded headless startup with a reduced mod set; the remaining messages were attributed to upstream Cobblemon data fixers.
 
+These checks were performed in the private development workspace. The harness scripts and audit tooling are not included in this public source tree, so visitors cannot reproduce them from this checkout. This repository also does not include a GitHub Actions workflow, and no CI build has been executed here.
+
 These are build-time and headless checks only. They do **not** constitute gameplay validation.
 
 ## 12. Tool-Assisted Development
