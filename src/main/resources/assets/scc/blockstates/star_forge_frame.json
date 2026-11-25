@@ -1,0 +1,68 @@
+{
+ "multipart": [
+  {
+   "when": {
+    "formed": "false"
+   },
+   "apply": {
+    "model": "scc:block/star_forge_frame"
+   }
+  },
+  {
+   "when": {
+    "formed": "true"
+   },
+   "apply": {
+    "model": "scc:block/star_forge/hidden"
+   }
+  },
+  {
+   "when": {
+    "formed": "true",
+    "link_north": "true"
+   },
+   "apply": {
+    "model": "scc:block/star_forge/frame_port"
+   }
+  },
+  {
+   "when": {
+    "formed": "true",
+    "link_east": "true"
+   },
+   "apply": {
+    "model": "scc:block/star_forge/frame_port",
+    "y": 90
+   }
+  },
+  {
+   "when": {
+    "formed": "true",
+    "link_south": "true"
+   },
+   "apply": {
+    "model": "scc:block/star_forge/frame_port",
+    "y": 180
+   }
+  },
+  {
+   "when": {
+    "formed": "true",
+    "link_west": "true"
+   },
+   "apply": {
+    "model": "scc:block/star_forge/frame_port",
+    "y": 270
+   }
+  },
+  {
+   "when": {
+    "formed": "true",
+    "link_up": "true"
+   },
+   "apply": {
+    "model": "scc:block/star_forge/frame_port_up"
+   }
+  }
+ ]
+}

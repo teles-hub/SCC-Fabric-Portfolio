@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "formed=false": {
+   "model": "scc:block/confinement_coil"
+  },
+  "formed=true": {
+   "model": "scc:block/star_forge/hidden"
+  }
+ }
+}

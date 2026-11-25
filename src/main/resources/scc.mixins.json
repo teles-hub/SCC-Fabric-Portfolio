@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.scc.calculator.mixin",
+  "plugin": "de.scc.calculator.SccMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PlayerBreakSpeedMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

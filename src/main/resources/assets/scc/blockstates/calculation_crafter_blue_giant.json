@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/calculation_crafter_blue_giant"
+    },
+    "active=true": {
+      "model": "scc:block/calculation_crafter_blue_giant_active"
+    }
+  }
+}

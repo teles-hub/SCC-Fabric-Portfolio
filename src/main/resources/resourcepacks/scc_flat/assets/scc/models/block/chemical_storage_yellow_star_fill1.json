@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "scc:block/chemical_storage_yellow_star_top",
+    "bottom": "scc:block/chemical_storage_yellow_star_bottom",
+    "side": "scc:block/chemical_storage_yellow_star_fill1"
+  }
+}

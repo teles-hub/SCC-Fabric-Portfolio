@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/crafting_terminal_side_l",
+    "north": "scc:block/crafting_terminal_front",
+    "south": "scc:block/crafting_terminal_back",
+    "west": "scc:block/crafting_terminal_side_l",
+    "east": "scc:block/crafting_terminal_side_r",
+    "up": "scc:block/crafting_terminal_top",
+    "down": "scc:block/crafting_terminal_back"
+  }
+}

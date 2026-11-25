@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=north,active=false": {
+      "model": "scc:block/transfer_calculator_blue_giant"
+    },
+    "facing=north,active=true": {
+      "model": "scc:block/transfer_calculator_blue_giant_active"
+    },
+    "facing=east,active=false": {
+      "model": "scc:block/transfer_calculator_blue_giant",
+      "y": 90
+    },
+    "facing=east,active=true": {
+      "model": "scc:block/transfer_calculator_blue_giant_active",
+      "y": 90
+    },
+    "facing=south,active=false": {
+      "model": "scc:block/transfer_calculator_blue_giant",
+      "y": 180
+    },
+    "facing=south,active=true": {
+      "model": "scc:block/transfer_calculator_blue_giant_active",
+      "y": 180
+    },
+    "facing=west,active=false": {
+      "model": "scc:block/transfer_calculator_blue_giant",
+      "y": 270
+    },
+    "facing=west,active=true": {
+      "model": "scc:block/transfer_calculator_blue_giant_active",
+      "y": 270
+    },
+    "facing=up,active=false": {
+      "model": "scc:block/transfer_calculator_blue_giant",
+      "x": 270
+    },
+    "facing=up,active=true": {
+      "model": "scc:block/transfer_calculator_blue_giant_active",
+      "x": 270
+    },
+    "facing=down,active=false": {
+      "model": "scc:block/transfer_calculator_blue_giant",
+      "x": 90
+    },
+    "facing=down,active=true": {
+      "model": "scc:block/transfer_calculator_blue_giant_active",
+      "x": 90
+    }
+  }
+}

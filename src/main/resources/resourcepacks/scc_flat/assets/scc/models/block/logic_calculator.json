@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/logic_calculator_side",
+    "north": "scc:block/logic_calculator_front",
+    "south": "scc:block/logic_calculator_back",
+    "west": "scc:block/logic_calculator_side",
+    "east": "scc:block/logic_calculator_side",
+    "up": "scc:block/logic_calculator_top",
+    "down": "scc:block/logic_calculator_back"
+  }
+}

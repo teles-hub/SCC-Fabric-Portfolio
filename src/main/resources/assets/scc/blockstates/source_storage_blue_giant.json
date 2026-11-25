@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "fill=0": {
+      "model": "scc:block/source_storage_blue_giant"
+    },
+    "fill=1": {
+      "model": "scc:block/source_storage_blue_giant_fill1"
+    },
+    "fill=2": {
+      "model": "scc:block/source_storage_blue_giant_fill2"
+    },
+    "fill=3": {
+      "model": "scc:block/source_storage_blue_giant_fill3"
+    },
+    "fill=4": {
+      "model": "scc:block/source_storage_blue_giant_fill4"
+    }
+  }
+}

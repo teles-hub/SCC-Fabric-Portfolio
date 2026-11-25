@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/calculation_crafter_red_dwarf"
+    },
+    "active=true": {
+      "model": "scc:block/calculation_crafter_red_dwarf_active"
+    }
+  }
+}

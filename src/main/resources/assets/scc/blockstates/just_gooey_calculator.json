@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,goo=0": {
+      "model": "scc:block/just_gooey_calculator"
+    },
+    "facing=north,goo=1": {
+      "model": "scc:block/just_gooey_calculator_goo1"
+    },
+    "facing=north,goo=2": {
+      "model": "scc:block/just_gooey_calculator_goo2"
+    },
+    "facing=north,goo=3": {
+      "model": "scc:block/just_gooey_calculator_goo3"
+    },
+    "facing=north,goo=4": {
+      "model": "scc:block/just_gooey_calculator_goo4"
+    },
+    "facing=east,goo=0": {
+      "model": "scc:block/just_gooey_calculator",
+      "y": 90
+    },
+    "facing=east,goo=1": {
+      "model": "scc:block/just_gooey_calculator_goo1",
+      "y": 90
+    },
+    "facing=east,goo=2": {
+      "model": "scc:block/just_gooey_calculator_goo2",
+      "y": 90
+    },
+    "facing=east,goo=3": {
+      "model": "scc:block/just_gooey_calculator_goo3",
+      "y": 90
+    },
+    "facing=east,goo=4": {
+      "model": "scc:block/just_gooey_calculator_goo4",
+      "y": 90
+    },
+    "facing=south,goo=0": {
+      "model": "scc:block/just_gooey_calculator",
+      "y": 180
+    },
+    "facing=south,goo=1": {
+      "model": "scc:block/just_gooey_calculator_goo1",
+      "y": 180
+    },
+    "facing=south,goo=2": {
+      "model": "scc:block/just_gooey_calculator_goo2",
+      "y": 180
+    },
+    "facing=south,goo=3": {
+      "model": "scc:block/just_gooey_calculator_goo3",
+      "y": 180
+    },
+    "facing=south,goo=4": {
+      "model": "scc:block/just_gooey_calculator_goo4",
+      "y": 180
+    },
+    "facing=west,goo=0": {
+      "model": "scc:block/just_gooey_calculator",
+      "y": 270
+    },
+    "facing=west,goo=1": {
+      "model": "scc:block/just_gooey_calculator_goo1",
+      "y": 270
+    },
+    "facing=west,goo=2": {
+      "model": "scc:block/just_gooey_calculator_goo2",
+      "y": 270
+    },
+    "facing=west,goo=3": {
+      "model": "scc:block/just_gooey_calculator_goo3",
+      "y": 270
+    },
+    "facing=west,goo=4": {
+      "model": "scc:block/just_gooey_calculator_goo4",
+      "y": 270
+    }
+  }
+}

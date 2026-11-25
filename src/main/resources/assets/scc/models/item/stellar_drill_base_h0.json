@@ -1,0 +1,18 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "scc:item/gear3d/drill_base_h0"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "scc:item/stellar_drill_base"
+      }
+    }
+  },
+  "textures": {
+    "particle": "scc:item/stellar_drill_base"
+  }
+}

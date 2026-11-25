@@ -1,0 +1,190 @@
+{
+  "network_hum": {
+    "subtitle": "subtitles.scc.network_hum",
+    "sounds": [
+      {
+        "name": "scc:network_hum",
+        "stream": false
+      }
+    ]
+  },
+  "order_placed": {
+    "subtitle": "subtitles.scc.order_placed",
+    "sounds": [
+      "scc:order_placed"
+    ]
+  },
+  "job_done": {
+    "subtitle": "subtitles.scc.job_done",
+    "sounds": [
+      "scc:job_done"
+    ]
+  },
+  "job_stuck": {
+    "subtitle": "subtitles.scc.job_stuck",
+    "sounds": [
+      "scc:job_stuck"
+    ]
+  },
+  "terminal_open": {
+    "subtitle": "subtitles.scc.terminal_open",
+    "sounds": [
+      "scc:terminal_open"
+    ]
+  },
+  "terminal_close": {
+    "subtitle": "subtitles.scc.terminal_close",
+    "sounds": [
+      "scc:terminal_close"
+    ]
+  },
+  "ui_click": {
+    "subtitle": "subtitles.scc.ui_click",
+    "sounds": [
+      "scc:ui_click"
+    ]
+  },
+  "item_stored": {
+    "subtitle": "subtitles.scc.item_stored",
+    "sounds": [
+      "scc:item_stored"
+    ]
+  },
+  "item_taken": {
+    "subtitle": "subtitles.scc.item_taken",
+    "sounds": [
+      "scc:item_taken"
+    ]
+  },
+  "wireless_link": {
+    "subtitle": "subtitles.scc.wireless_link",
+    "sounds": [
+      "scc:wireless_link"
+    ]
+  },
+  "forge_charge": {
+    "subtitle": "subtitles.scc.forge_charge",
+    "sounds": [
+      {
+        "name": "scc:forge_charge",
+        "stream": false
+      }
+    ]
+  },
+  "forge_laser": {
+    "subtitle": "subtitles.scc.forge_laser",
+    "sounds": [
+      {
+        "name": "scc:forge_laser",
+        "stream": false
+      }
+    ]
+  },
+  "forge_complete": {
+    "subtitle": "subtitles.scc.forge_complete",
+    "sounds": [
+      {
+        "name": "scc:forge_complete",
+        "stream": false
+      }
+    ]
+  },
+  "forge_supernova": {
+    "subtitle": "subtitles.scc.forge_supernova",
+    "sounds": [
+      {
+        "name": "scc:forge_supernova",
+        "stream": false
+      }
+    ]
+  },
+  "forge_collapse": {
+    "subtitle": "subtitles.scc.forge_collapse",
+    "sounds": [
+      {
+        "name": "scc:forge_collapse",
+        "stream": false
+      }
+    ]
+  },
+  "harvester_beam": {
+    "subtitle": "subtitles.scc.harvester_beam",
+    "sounds": [
+      {
+        "name": "scc:harvester_beam",
+        "stream": false
+      }
+    ]
+  },
+  "harvester_pulse": {
+    "subtitle": "subtitles.scc.harvester_pulse",
+    "sounds": [
+      {
+        "name": "scc:harvester_pulse",
+        "stream": false
+      }
+    ]
+  },
+  "harvester_collect": {
+    "subtitle": "subtitles.scc.harvester_collect",
+    "sounds": [
+      {
+        "name": "scc:harvester_collect",
+        "stream": false
+      }
+    ]
+  },
+  "lens_insert": {
+    "subtitle": "subtitles.scc.lens_insert",
+    "sounds": [
+      {
+        "name": "scc:lens_insert",
+        "stream": false
+      }
+    ]
+  },
+  "wormhole_jump": {
+    "subtitle": "subtitles.scc.wormhole_jump",
+    "sounds": [
+      {
+        "name": "scc:forge_collapse",
+        "stream": false,
+        "pitch": 1.7,
+        "volume": 0.8
+      }
+    ]
+  },
+  "meteor_flyby": {
+    "subtitle": "subtitles.scc.meteor_flyby",
+    "sounds": [
+      "scc:meteor_flyby"
+    ]
+  },
+  "meteor_impact": {
+    "subtitle": "subtitles.scc.meteor_impact",
+    "sounds": [
+      "scc:meteor_impact"
+    ]
+  },
+  "meteor_catch": {
+    "subtitle": "subtitles.scc.meteor_catch",
+    "sounds": [
+      "scc:meteor_catch"
+    ]
+  },
+  "gravity_lift": {
+    "subtitle": "subtitles.scc.gravity_lift",
+    "sounds": [
+      "scc:gravity_lift"
+    ]
+  },
+  "drill_whir": {
+    "subtitle": "subtitles.scc.drill_whir",
+    "sounds": [
+      {
+        "name": "scc:drill_whir",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "scc:block/wormhole_gate_side",
+    "top": "scc:block/wormhole_gate_top",
+    "bottom": "scc:block/wormhole_gate_bottom",
+    "particle": "scc:block/wormhole_gate_side"
+  }
+}

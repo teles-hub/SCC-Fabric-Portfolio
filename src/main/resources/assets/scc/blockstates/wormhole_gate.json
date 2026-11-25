@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/wormhole_gate"
+    },
+    "active=true": {
+      "model": "scc:block/wormhole_gate_active"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:coal",
+    "minecraft:charcoal",
+    { "id": "#minecraft:logs_that_burn", "required": false },
+    { "id": "#minecraft:planks", "required": false }
+  ]
+}

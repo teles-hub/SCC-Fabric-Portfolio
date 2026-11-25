@@ -1,0 +1,795 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "scc:item/gear3d/drill_base"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "scc:item/stellar_drill_base"
+      }
+    }
+  },
+  "textures": {
+    "particle": "scc:item/stellar_drill_base"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.115
+      },
+      "model": "scc:item/stellar_drill_base_s0"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.115,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_s0_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.24
+      },
+      "model": "scc:item/stellar_drill_base_s1"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.24,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_s1_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.365
+      },
+      "model": "scc:item/stellar_drill_base_s2"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.365,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_s2_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.49
+      },
+      "model": "scc:item/stellar_drill_base_s3"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_s3_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.615
+      },
+      "model": "scc:item/stellar_drill_base_h0"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.615,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_h0_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.74
+      },
+      "model": "scc:item/stellar_drill_base_h1"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.74,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_h1_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.865
+      },
+      "model": "scc:item/stellar_drill_base_h2"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.865,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_h2_design"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.99
+      },
+      "model": "scc:item/stellar_drill_base_h3"
+    },
+    {
+      "predicate": {
+        "scc:spin": 0.99,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_base_h3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001
+      },
+      "model": "scc:item/stellar_drill_red_dwarf"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.115
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.115,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.24
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.24,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.365
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.365,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.49
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_s3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.615
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.615,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.74
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.74,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.865
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.865,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.99
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09000000000000001,
+        "scc:spin": 0.99,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_red_dwarf_h3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19
+      },
+      "model": "scc:item/stellar_drill_yellow_star"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.115
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.115,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.24
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.24,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.365
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.365,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.49
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_s3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.615
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.615,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.74
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.74,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.865
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.865,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.99
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:spin": 0.99,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_yellow_star_h3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29
+      },
+      "model": "scc:item/stellar_drill_blue_giant"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.115
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.115,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.24
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.24,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.365
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.365,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.49
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_s3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.615
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.615,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.74
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.74,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.865
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.865,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.99
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:spin": 0.99,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_blue_giant_h3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39
+      },
+      "model": "scc:item/stellar_drill_neutron_star"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.115
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.115,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.24
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.24,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.365
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.365,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.49
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_s3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.615
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.615,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.74
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.74,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.865
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.865,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.99
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:spin": 0.99,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_neutron_star_h3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49
+      },
+      "model": "scc:item/stellar_drill_singularity"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.115
+      },
+      "model": "scc:item/stellar_drill_singularity_s0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.115,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_s0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.24
+      },
+      "model": "scc:item/stellar_drill_singularity_s1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.24,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_s1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.365
+      },
+      "model": "scc:item/stellar_drill_singularity_s2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.365,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_s2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.49
+      },
+      "model": "scc:item/stellar_drill_singularity_s3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_s3_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.615
+      },
+      "model": "scc:item/stellar_drill_singularity_h0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.615,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_h0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.74
+      },
+      "model": "scc:item/stellar_drill_singularity_h1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.74,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_h1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.865
+      },
+      "model": "scc:item/stellar_drill_singularity_h2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.865,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_h2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.99
+      },
+      "model": "scc:item/stellar_drill_singularity_h3"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:spin": 0.99,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_drill_singularity_h3_design"
+    }
+  ]
+}

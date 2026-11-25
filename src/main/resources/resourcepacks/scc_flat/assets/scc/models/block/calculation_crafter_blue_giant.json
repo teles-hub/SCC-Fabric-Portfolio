@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "scc:block/calculation_crafter_blue_giant",
+    "top": "scc:block/calculation_crafter_blue_giant_top",
+    "bottom": "scc:block/calculation_crafter_blue_giant",
+    "particle": "scc:block/calculation_crafter_blue_giant"
+  }
+}

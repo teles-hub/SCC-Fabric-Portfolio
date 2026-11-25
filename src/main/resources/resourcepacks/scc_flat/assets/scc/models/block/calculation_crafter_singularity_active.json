@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "scc:block/calculation_crafter_singularity_active",
+    "top": "scc:block/calculation_crafter_singularity_top_active",
+    "bottom": "scc:block/calculation_crafter_singularity",
+    "particle": "scc:block/calculation_crafter_singularity"
+  }
+}

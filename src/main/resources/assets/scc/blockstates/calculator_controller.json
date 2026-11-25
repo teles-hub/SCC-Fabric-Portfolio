@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/calculator_controller"
+    },
+    "active=true": {
+      "model": "scc:block/calculator_controller_active"
+    }
+  }
+}

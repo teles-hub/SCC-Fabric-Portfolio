@@ -1,0 +1,7 @@
+# Preserve extracted source assets, resourcepacks and binary fixtures from Git EOL conversion.
+src/main/resources/assets/** -text
+src/main/resources/resourcepacks/** -text
+docs/blocked-resources/** -text
+docs/source/*.jar -text
+src/main/resources/**/*.class -text
+tools/bytecode_tests/fixtures/**/*.class -text

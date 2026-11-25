@@ -1,0 +1,11 @@
+{
+  "multipart": [
+    { "apply": { "model": "scc:block/network_cable_core" } },
+    { "when": { "north": "true" }, "apply": { "model": "scc:block/network_cable_north" } },
+    { "when": { "east": "true" }, "apply": { "model": "scc:block/network_cable_east" } },
+    { "when": { "south": "true" }, "apply": { "model": "scc:block/network_cable_south" } },
+    { "when": { "west": "true" }, "apply": { "model": "scc:block/network_cable_west" } },
+    { "when": { "up": "true" }, "apply": { "model": "scc:block/network_cable_up" } },
+    { "when": { "down": "true" }, "apply": { "model": "scc:block/network_cable_down" } }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/terminal_side_l",
+    "north": "scc:block/terminal_front",
+    "south": "scc:block/terminal_back",
+    "west": "scc:block/terminal_side_l",
+    "east": "scc:block/terminal_side_r",
+    "up": "scc:block/terminal_top",
+    "down": "scc:block/terminal_back"
+  }
+}

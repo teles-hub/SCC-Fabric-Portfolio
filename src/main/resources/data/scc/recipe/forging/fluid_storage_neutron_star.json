@@ -1,0 +1,24 @@
+{
+  "type": "scc:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    "EQE",
+    "QCQ",
+    "EQE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "C": {
+      "item": "scc:fluid_storage_blue_giant"
+    }
+  },
+  "result": {
+    "id": "scc:fluid_storage_neutron_star",
+    "count": 1
+  }
+}

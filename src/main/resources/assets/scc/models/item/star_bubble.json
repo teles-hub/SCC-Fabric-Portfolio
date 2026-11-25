@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "scc:item/star_bubble"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "scc:bubble": 0.09
+      },
+      "model": "scc:item/star_bubble_passive"
+    },
+    {
+      "predicate": {
+        "scc:bubble": 0.19
+      },
+      "model": "scc:item/star_bubble_small"
+    },
+    {
+      "predicate": {
+        "scc:bubble": 0.29
+      },
+      "model": "scc:item/star_bubble_hostile"
+    }
+  ]
+}

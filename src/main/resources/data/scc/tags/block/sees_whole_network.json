@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "create:schematicannon", "required": false }
+  ]
+}

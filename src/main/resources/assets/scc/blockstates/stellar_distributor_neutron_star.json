@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/stellar_distributor_neutron_star"
+    },
+    "active=true": {
+      "model": "scc:block/stellar_distributor_neutron_star_active"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "cobblemon:campfire_pot_red",
+      "required": false
+    },
+    {
+      "id": "cobblemon:campfire_pot_black",
+      "required": false
+    },
+    {
+      "id": "cobblemon:campfire_pot_blue",
+      "required": false
+    },
+    {
+      "id": "cobblemon:campfire_pot_green",
+      "required": false
+    },
+    {
+      "id": "cobblemon:campfire_pot_pink",
+      "required": false
+    },
+    {
+      "id": "cobblemon:campfire_pot_white",
+      "required": false
+    },
+    {
+      "id": "cobblemon:campfire_pot_yellow",
+      "required": false
+    }
+  ]
+}

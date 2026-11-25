@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "scc:block/star_quarry_red_dwarf_top",
+    "bottom": "scc:block/star_quarry_red_dwarf_bottom",
+    "side": "scc:block/star_quarry_red_dwarf_side",
+    "front": "scc:block/star_quarry_red_dwarf_front",
+    "particle": "scc:block/star_quarry_red_dwarf_side"
+  }
+}

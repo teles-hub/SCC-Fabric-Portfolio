@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/transfer_calculator_singularity_side_l",
+    "north": "scc:block/transfer_calculator_singularity_front",
+    "south": "scc:block/transfer_calculator_singularity_back",
+    "west": "scc:block/transfer_calculator_singularity_side_l",
+    "east": "scc:block/transfer_calculator_singularity_side_r",
+    "up": "scc:block/transfer_calculator_singularity_top",
+    "down": "scc:block/transfer_calculator_singularity_bottom"
+  }
+}

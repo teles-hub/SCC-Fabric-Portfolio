@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/advanced_processing_calculator_neutron_star_side_l",
+    "north": "scc:block/advanced_processing_calculator_neutron_star_front_active",
+    "south": "scc:block/advanced_processing_calculator_neutron_star_back_active",
+    "west": "scc:block/advanced_processing_calculator_neutron_star_side_l_active",
+    "east": "scc:block/advanced_processing_calculator_neutron_star_side_r_active",
+    "up": "scc:block/advanced_processing_calculator_neutron_star_top_active",
+    "down": "scc:block/advanced_processing_calculator_neutron_star_back"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#scc:mineable/stellar_drill",
+    {
+      "id": "#c:ores",
+      "required": false
+    }
+  ]
+}

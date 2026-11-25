@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "type": "scc:block_designs"
+    },
+    {
+      "type": "scc:block_designs",
+      "dir": "item"
+    }
+  ]
+}

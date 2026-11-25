@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "create:depot", "required": false },
+    { "id": "create:basin", "required": false }
+  ]
+}

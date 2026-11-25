@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "scc:block/logic_calculator" },
+    "facing=east": { "model": "scc:block/logic_calculator", "y": 90 },
+    "facing=south": { "model": "scc:block/logic_calculator", "y": 180 },
+    "facing=west": { "model": "scc:block/logic_calculator", "y": 270 }
+  }
+}

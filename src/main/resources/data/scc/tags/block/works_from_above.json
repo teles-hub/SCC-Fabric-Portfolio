@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "create:mechanical_press", "required": false },
+    { "id": "create:mechanical_mixer", "required": false },
+    { "id": "create:deployer", "required": false },
+    { "id": "create:spout", "required": false }
+  ]
+}

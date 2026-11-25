@@ -1,0 +1,22 @@
+{
+  "parent": "scc:block/crafting_monitor",
+  "display": {
+    "gui": {
+      "rotation": [
+        25.0,
+        205.0,
+        0.0
+      ],
+      "translation": [
+        -2.09,
+        1.89,
+        0
+      ],
+      "scale": [
+        0.76,
+        0.76,
+        0.76
+      ]
+    }
+  }
+}

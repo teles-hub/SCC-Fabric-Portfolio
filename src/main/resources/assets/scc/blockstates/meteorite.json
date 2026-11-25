@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hot=false": {
+      "model": "scc:block/meteorite"
+    },
+    "hot=true": {
+      "model": "scc:block/meteorite_hot"
+    }
+  }
+}

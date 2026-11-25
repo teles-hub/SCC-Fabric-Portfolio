@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","category":"misc","pattern":["IRI","RCR","ITI"],"key":{"I":{"item":"minecraft:iron_ingot"},"R":{"item":"minecraft:redstone"},"C":{"item":"minecraft:comparator"},"T":{"item":"scc:terminal"}},"result":{"id":"scc:redstone_emitter","count":1}}

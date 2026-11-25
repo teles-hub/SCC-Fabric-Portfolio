@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/just_gooey_calculator_side",
+    "north": "scc:block/just_gooey_calculator_front",
+    "south": "scc:block/just_gooey_calculator_back",
+    "west": "scc:block/just_gooey_calculator_side",
+    "east": "scc:block/just_gooey_calculator_side",
+    "up": "scc:block/just_gooey_calculator_top",
+    "down": "scc:block/just_gooey_calculator_back"
+  }
+}

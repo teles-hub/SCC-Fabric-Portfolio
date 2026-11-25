@@ -1,0 +1,24 @@
+{
+  "type": "scc:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    "GAG",
+    "ACA",
+    "GAG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "scc:item_storage_red_dwarf"
+    }
+  },
+  "result": {
+    "id": "scc:item_storage_yellow_star",
+    "count": 1
+  }
+}

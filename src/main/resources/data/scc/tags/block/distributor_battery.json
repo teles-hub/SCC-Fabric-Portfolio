@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "justdirethings:energytransmitter", "required": false }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "_comment": "Star Quarry orbital mining (GitHub #142). use_worldgen: ores come from the world generation of the quarry's dimension, weighted by how much of each ore the world generates (false = only the loot tables data/scc/loot_table/quarry/orbital/<tier>). Items per haul follow the tier's loot table. weights: factor per ore block (0 = never). extra: per dimension, ore blocks with a fixed raw weight (an overworld iron ore vein is about 900). Never-pulled blocks: block tag #scc:orbital_blacklist.",
+  "use_worldgen": true,
+  "fe_per_haul": 250000,
+  "ticks_per_haul": {
+    "basic": 120,
+    "red_dwarf": 90,
+    "yellow_star": 60,
+    "blue_giant": 36,
+    "neutron_star": 24,
+    "singularity": 12
+  },
+  "rarity_exponent": {
+    "basic": 1.0,
+    "red_dwarf": 0.95,
+    "yellow_star": 0.9,
+    "blue_giant": 0.85,
+    "neutron_star": 0.8,
+    "singularity": 0.75
+  },
+  "weights": {},
+  "extra": {}
+}

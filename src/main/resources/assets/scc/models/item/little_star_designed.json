@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "scc:item/little_star",
+    "layer1": "scc:item/little_star_design"
+  }
+}

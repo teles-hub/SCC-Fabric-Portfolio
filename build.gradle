@@ -1,0 +1,117 @@
+plugins {
+    id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base { archivesName = project.archives_base_name }
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+    maven { url = 'https://maven.terraformersmc.com/releases/' }
+    maven { url = 'https://maven.blamejared.com/' }
+    maven { url = 'https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
+    maven { url = 'https://maven.shedaniel.me/' }
+    // Accessories API used by the optional Cobbleverse equipment-slot bridge.
+    maven { url = 'https://maven.wispforest.io/releases' }
+}
+
+sourceSets { main { compileClasspath += files(sourceSets.main.resources.srcDirs) } }
+
+configurations {
+    // Inspection-only dependency: never packaged or placed on SCC runtime classpath.
+    cobblemonBinaryApi
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    include modApi("teamreborn:energy:${project.team_reborn_energy_version}") {
+        exclude(group: "net.fabricmc.fabric-api")
+    }
+    modCompileOnly "dev.emi:emi-fabric:${project.emi_version}:api"
+    modCompileOnly "mezz.jei:jei-1.21.1-fabric-api:${project.jei_version}"
+    modCompileOnly "maven.modrinth:jade:${project.jade_version}"
+    // Cobbleverse 1.8.0 ships Accessories 1.1.0-beta.54+1.21.1; compile-only keeps SCC standalone.
+    modCompileOnly "io.wispforest:accessories-fabric:1.1.0-beta.54+1.21.1"
+    cobblemonBinaryApi "maven.modrinth:MdwFAVRL:PdOzYHKU"
+}
+
+tasks.register('verifyCobblemonBinaryApi') {
+    group = 'verification'
+    description = 'Inspects the exact Cobblemon 1.8.4 Fabric JAR using JDK 21 javap.'
+    inputs.files(configurations.cobblemonBinaryApi)
+    doLast {
+        def cobblemonJar = configurations.cobblemonBinaryApi.singleFile
+        def javapName = org.gradle.internal.os.OperatingSystem.current().isWindows() ? 'javap.exe' : 'javap'
+        def javap = new File(System.getProperty('java.home'), "bin/${javapName}")
+        if (!javap.isFile()) throw new GradleException("javap not found in Java 21 toolchain: ${javap}")
+
+        def inspect = { String className ->
+            def process = new ProcessBuilder(javap.absolutePath, '-classpath', cobblemonJar.absolutePath, '-p', '-s', className)
+                    .redirectErrorStream(true).start()
+            def output = process.inputStream.getText('UTF-8')
+            def exitCode = process.waitFor()
+            if (exitCode != 0) throw new GradleException("javap failed for ${className} (exit ${exitCode}):\n${output}")
+            output
+        }
+        def requireSignature = { String className, String output, String signature ->
+            if (!output.contains(signature)) throw new GradleException("Cobblemon 1.8.4 binary API mismatch: ${className} missing ${signature}\n--- javap ---\n${output}")
+            logger.lifecycle("Cobblemon binary API OK: ${className} :: ${signature}")
+        }
+
+        def pot = inspect('com.cobblemon.mod.common.block.entity.CampfireBlockEntity')
+        requireSignature('CampfireBlockEntity', pot, 'toggleLid(boolean)')
+        requireSignature('CampfireBlockEntity', pot, 'getPotItem()')
+        requireSignature('CampfireBlockEntity', pot, 'consumeCraftingIngredients(com.cobblemon.mod.common.item.crafting.CookingPotRecipeBase,')
+        requireSignature('CampfireBlockEntity', pot, 'getSeasonings()')
+        requireSignature('CampfireBlockEntity', pot, 'getIngredients()')
+
+        // In 1.8.4 shaped ingredients are represented by the pattern; no getIngredients() accessor exists.
+        def shaped = inspect('com.cobblemon.mod.common.item.crafting.CookingPotRecipe')
+        requireSignature('CookingPotRecipe', shaped, 'getPattern()')
+        requireSignature('CookingPotRecipe', shaped, 'getResult()')
+        requireSignature('CookingPotRecipe', shaped, 'applySeasoning(')
+
+        // Validate behavior-facing API without assuming JavaBean accessors on Kotlin/data implementations.
+        def shapeless = inspect('com.cobblemon.mod.common.item.crafting.CookingPotShapelessRecipe')
+        requireSignature('CookingPotShapelessRecipe', shapeless, 'matches(')
+        requireSignature('CookingPotShapelessRecipe', shapeless, 'getResult()')
+
+        def recipeBase = inspect('com.cobblemon.mod.common.item.crafting.CookingPotRecipeBase')
+        requireSignature('CookingPotRecipeBase', recipeBase, 'matches(')
+        requireSignature('CookingPotRecipeBase', recipeBase, 'getResult()')
+
+        def recipeTypes = inspect('com.cobblemon.mod.common.CobblemonRecipeTypes')
+        requireSignature('CobblemonRecipeTypes', recipeTypes, 'COOKING_POT_COOKING')
+        requireSignature('CobblemonRecipeTypes', recipeTypes, 'COOKING_POT_SHAPELESS')
+        logger.lifecycle("Cobblemon 1.8.4 binary verification passed: ${cobblemonJar.name}")
+    }
+}
+
+tasks.named('check') { dependsOn tasks.named('verifyCobblemonBinaryApi') }
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") { expand "version": project.version }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release = 21
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+    from("LICENSE") { rename { "${it}_${project.archives_base_name}" } }
+}

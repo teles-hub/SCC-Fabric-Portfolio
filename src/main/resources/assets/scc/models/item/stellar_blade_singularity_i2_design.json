@@ -1,0 +1,19 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "scc:item/gear3d/blade_singularity_i2_design"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "scc:item/stellar_blade_singularity",
+        "layer1": "scc:item/design/stellar_blade_singularity"
+      }
+    }
+  },
+  "textures": {
+    "particle": "scc:item/stellar_blade_singularity"
+  }
+}

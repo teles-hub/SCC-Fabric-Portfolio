@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "scc:item/stellar_exo_boots_singularity",
+    "layer1": "scc:item/design/stellar_exo_boots_singularity"
+  }
+}

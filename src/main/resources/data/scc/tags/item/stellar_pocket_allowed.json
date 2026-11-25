@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "functionalstorage:linking_tool",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:configuration_tool",
+      "required": false
+    },
+    {
+      "id": "scc_mobs:stellar_bestiary",
+      "required": false
+    }
+  ]
+}

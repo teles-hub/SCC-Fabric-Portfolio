@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "RER",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "scc:range_upgrade"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "id": "scc:infinite_range_upgrade",
+    "count": 1
+  }
+}

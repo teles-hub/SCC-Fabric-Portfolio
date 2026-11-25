@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "scc:block/calculation_crafter_neutron_star",
+    "top": "scc:block/calculation_crafter_neutron_star_top",
+    "bottom": "scc:block/calculation_crafter_neutron_star",
+    "particle": "scc:block/calculation_crafter_neutron_star"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "scc:block/mini_sun"
+    },
+    "lit=true": {
+      "model": "scc:block/mini_sun"
+    }
+  }
+}

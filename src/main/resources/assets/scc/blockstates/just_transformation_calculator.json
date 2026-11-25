@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "scc:block/just_transformation_calculator"
+    },
+    "facing=east": {
+      "model": "scc:block/just_transformation_calculator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scc:block/just_transformation_calculator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scc:block/just_transformation_calculator",
+      "y": 270
+    }
+  }
+}

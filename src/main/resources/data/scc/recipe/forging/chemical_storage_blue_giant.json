@@ -1,0 +1,24 @@
+{
+  "type": "scc:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    "DLD",
+    "LCL",
+    "DLD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "C": {
+      "item": "scc:chemical_storage_yellow_star"
+    }
+  },
+  "result": {
+    "id": "scc:chemical_storage_blue_giant",
+    "count": 1
+  }
+}

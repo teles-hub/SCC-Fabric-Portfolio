@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "scc:block/source_storage_blue_giant_top",
+    "bottom": "scc:block/source_storage_blue_giant_bottom",
+    "side": "scc:block/source_storage_blue_giant_fill2"
+  }
+}

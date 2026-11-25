@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/calculation_crafter_neutron_star"
+    },
+    "active=true": {
+      "model": "scc:block/calculation_crafter_neutron_star_active"
+    }
+  }
+}

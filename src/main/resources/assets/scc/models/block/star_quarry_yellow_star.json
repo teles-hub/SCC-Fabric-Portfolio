@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "scc:block/star_quarry_yellow_star_top",
+    "bottom": "scc:block/star_quarry_yellow_star_bottom",
+    "side": "scc:block/star_quarry_yellow_star_side",
+    "front": "scc:block/star_quarry_yellow_star_front",
+    "particle": "scc:block/star_quarry_yellow_star_side"
+  }
+}

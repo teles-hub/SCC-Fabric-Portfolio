@@ -1,0 +1,379 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "scc:item/gear3d/bow_base"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "scc:item/stellar_bow_base"
+      }
+    }
+  },
+  "textures": {
+    "particle": "scc:item/stellar_bow_base"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_base_design"
+    },
+    {
+      "predicate": {
+        "scc:pulling": 1
+      },
+      "model": "scc:item/stellar_bow_base_p0"
+    },
+    {
+      "predicate": {
+        "scc:pulling": 1,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_base_p0_design"
+    },
+    {
+      "predicate": {
+        "scc:pulling": 1,
+        "scc:pull": 0.65
+      },
+      "model": "scc:item/stellar_bow_base_p1"
+    },
+    {
+      "predicate": {
+        "scc:pulling": 1,
+        "scc:pull": 0.65,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_base_p1_design"
+    },
+    {
+      "predicate": {
+        "scc:pulling": 1,
+        "scc:pull": 0.9
+      },
+      "model": "scc:item/stellar_bow_base_p2"
+    },
+    {
+      "predicate": {
+        "scc:pulling": 1,
+        "scc:pull": 0.9,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_base_p2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09
+      },
+      "model": "scc:item/stellar_bow_red_dwarf"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_red_dwarf_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:pulling": 1
+      },
+      "model": "scc:item/stellar_bow_red_dwarf_p0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:pulling": 1,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_red_dwarf_p0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:pulling": 1,
+        "scc:pull": 0.65
+      },
+      "model": "scc:item/stellar_bow_red_dwarf_p1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:pulling": 1,
+        "scc:pull": 0.65,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_red_dwarf_p1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:pulling": 1,
+        "scc:pull": 0.9
+      },
+      "model": "scc:item/stellar_bow_red_dwarf_p2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:pulling": 1,
+        "scc:pull": 0.9,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_red_dwarf_p2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19
+      },
+      "model": "scc:item/stellar_bow_yellow_star"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_yellow_star_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:pulling": 1
+      },
+      "model": "scc:item/stellar_bow_yellow_star_p0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:pulling": 1,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_yellow_star_p0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:pulling": 1,
+        "scc:pull": 0.65
+      },
+      "model": "scc:item/stellar_bow_yellow_star_p1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:pulling": 1,
+        "scc:pull": 0.65,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_yellow_star_p1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:pulling": 1,
+        "scc:pull": 0.9
+      },
+      "model": "scc:item/stellar_bow_yellow_star_p2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:pulling": 1,
+        "scc:pull": 0.9,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_yellow_star_p2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29
+      },
+      "model": "scc:item/stellar_bow_blue_giant"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_blue_giant_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:pulling": 1
+      },
+      "model": "scc:item/stellar_bow_blue_giant_p0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:pulling": 1,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_blue_giant_p0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:pulling": 1,
+        "scc:pull": 0.65
+      },
+      "model": "scc:item/stellar_bow_blue_giant_p1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:pulling": 1,
+        "scc:pull": 0.65,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_blue_giant_p1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:pulling": 1,
+        "scc:pull": 0.9
+      },
+      "model": "scc:item/stellar_bow_blue_giant_p2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:pulling": 1,
+        "scc:pull": 0.9,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_blue_giant_p2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39
+      },
+      "model": "scc:item/stellar_bow_neutron_star"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_neutron_star_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:pulling": 1
+      },
+      "model": "scc:item/stellar_bow_neutron_star_p0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:pulling": 1,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_neutron_star_p0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:pulling": 1,
+        "scc:pull": 0.65
+      },
+      "model": "scc:item/stellar_bow_neutron_star_p1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:pulling": 1,
+        "scc:pull": 0.65,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_neutron_star_p1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:pulling": 1,
+        "scc:pull": 0.9
+      },
+      "model": "scc:item/stellar_bow_neutron_star_p2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:pulling": 1,
+        "scc:pull": 0.9,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_neutron_star_p2_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49
+      },
+      "model": "scc:item/stellar_bow_singularity"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_singularity_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:pulling": 1
+      },
+      "model": "scc:item/stellar_bow_singularity_p0"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:pulling": 1,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_singularity_p0_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:pulling": 1,
+        "scc:pull": 0.65
+      },
+      "model": "scc:item/stellar_bow_singularity_p1"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:pulling": 1,
+        "scc:pull": 0.65,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_singularity_p1_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:pulling": 1,
+        "scc:pull": 0.9
+      },
+      "model": "scc:item/stellar_bow_singularity_p2"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:pulling": 1,
+        "scc:pull": 0.9,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_bow_singularity_p2_design"
+    }
+  ]
+}

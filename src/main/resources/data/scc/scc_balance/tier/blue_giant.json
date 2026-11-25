@@ -1,0 +1,6 @@
+{
+  "ticks_per_operation": 5,
+  "parallel_jobs": 8,
+  "energy_per_tick": 512000,
+  "range_bonus": 64
+}

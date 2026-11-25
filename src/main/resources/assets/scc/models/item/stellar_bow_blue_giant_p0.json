@@ -1,0 +1,18 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "scc:item/gear3d/bow_blue_giant_p0"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "scc:item/stellar_bow_blue_giant_pulling_0"
+      }
+    }
+  },
+  "textures": {
+    "particle": "scc:item/stellar_bow_blue_giant"
+  }
+}

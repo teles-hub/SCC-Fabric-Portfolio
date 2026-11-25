@@ -1,0 +1,24 @@
+{
+  "type": "scc:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    "EPE",
+    "PCP",
+    "EPE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
+      "item": "minecraft:ender_pearl"
+    },
+    "C": {
+      "item": "scc:chemical_storage_neutron_star"
+    }
+  },
+  "result": {
+    "id": "scc:chemical_storage_singularity",
+    "count": 1
+  }
+}

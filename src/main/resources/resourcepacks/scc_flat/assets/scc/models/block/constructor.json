@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/constructor_front",
+    "north": "scc:block/constructor_front",
+    "south": "scc:block/constructor",
+    "east": "scc:block/constructor",
+    "west": "scc:block/constructor",
+    "up": "scc:block/constructor_top",
+    "down": "scc:block/constructor_bottom"
+  }
+}

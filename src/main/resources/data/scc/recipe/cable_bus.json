@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","category":"misc","pattern":[" C ","CIC"," C "],"key":{"C":{"item":"scc:network_cable"},"I":{"item":"minecraft:iron_ingot"}},"result":{"id":"scc:cable_bus","count":1}}

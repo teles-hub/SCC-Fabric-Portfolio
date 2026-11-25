@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "fluxnetworks:flux_plug", "required": false },
+    { "id": "fluxnetworks:flux_point", "required": false },
+    { "id": "appflux:flux_accessor", "required": false },
+    { "id": "mekanism:quantum_entangloporter", "required": false }
+  ]
+}

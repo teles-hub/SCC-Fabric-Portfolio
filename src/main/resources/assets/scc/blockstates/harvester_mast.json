@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "formed=false": {
+   "model": "scc:block/harvester_mast"
+  },
+  "formed=true": {
+   "model": "scc:block/star_forge/hidden"
+  }
+ }
+}

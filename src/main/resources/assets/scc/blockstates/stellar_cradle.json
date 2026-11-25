@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "formed=false": {
+   "model": "scc:block/stellar_cradle"
+  },
+  "formed=true": {
+   "model": "scc:block/star_forge/hidden"
+  }
+ }
+}

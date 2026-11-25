@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "formed=false": {
+   "model": "scc:block/focus_pylon"
+  },
+  "formed=true": {
+   "model": "scc:block/star_forge/hidden"
+  }
+ }
+}

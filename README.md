@@ -1,150 +1,144 @@
-# SCC-Fabric-Portfolio
-Port não oficial do SCC – Super Cool Calculator de NeoForge para Fabric 1.21.1. Projeto independente focado em armazenamento, redes, análise de receitas e autocrafting. Original criado por XxRonaldxX, sob licença MIT.
 # SCC Fabric — Unofficial Port
 
-**An unofficial Fabric port of SCC – Super Cool Calculator for Minecraft 1.21.1.**
+**An unofficial, independent Fabric port of SCC – Super Cool Calculator for Minecraft 1.21.1.**
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)](https://fabricmc.net/)
 [![Java](https://img.shields.io/badge/Java-21-orange)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-In%20Development-yellow)](#project-status)
+[![Status](https://img.shields.io/badge/Status-In%20development-yellow)](#current-limitations)
 
-## About the Project
+## 1. About the Project
 
-SCC Fabric is an independent, unofficial port of **SCC – Super Cool Calculator**, originally created by **XxRonaldxX** for NeoForge.
+SCC Fabric adapts the non-combat systems of **SCC – Super Cool Calculator** to the Fabric modding ecosystem. The original mod was created for NeoForge by **XxRonaldxX** and is distributed under the MIT License.
 
-The purpose of this project is to adapt the original mod's systems and architecture to the Fabric modding environment while preserving its core concepts and functionality.
+This repository contains a source publication of that adaptation: recipe analysis, logistics and cable networks, storage blocks, terminals, autocrafting infrastructure and an optional Cobblemon Campfire Pot processor.
 
-The port involves analyzing existing code, adapting platform-specific APIs, rebuilding integrations and implementing compatibility with the Fabric ecosystem.
+This is an **independent, unofficial port**. It is neither an official release nor a continuation authorized by the original author.
 
-This project is primarily focused on Minecraft 1.21.1, with compatibility work targeting Cobblemon 1.8.4 and Cobbleverse 1.8.0.
+## 2. Original Project and Credits
 
-## Original Project & Credits
-
-All original credit belongs to **XxRonaldxX**, the creator of SCC – Super Cool Calculator.
-
-- **Original Mod:** SCC – Super Cool Calculator
-- **Original Author:** XxRonaldxX
-- **Original Mod Loader:** NeoForge
-- **Original Platform:** Minecraft
-- **Original License:** MIT
-
-**Original project:**
-https://www.curseforge.com/minecraft/mc-mods/scc-super-cool-calculator
-
-**Original source and issue tracker:**
-https://github.com/xXxRonaldxXx/SuperCoolCalculator
-
-This repository contains an independent, unofficial port and adaptation. It is not an official release, continuation or partnership with the original author.
-
-The original author's copyright notice and MIT license terms must be preserved.
-
-## Project Scope
-
-The port focuses on the non-combat systems of SCC.
-
-### Storage Systems
-
-- Item storage and inventory management.
-- Fluid and chemical storage foundations.
-- Storage tiers and upgrade progression.
-- Storage connectors and network access.
-- Data persistence and synchronization.
-
-### Network Infrastructure
-
-- Physical cable connections.
-- Cable Bus infrastructure.
-- Network discovery and topology.
-- Resource access and transfer foundations.
-- Wireless infrastructure under development.
-
-### Recipe System
-
-- Recipe analysis and material calculations.
-- Recipe registration and compatibility.
-- Ingredient and resource management.
-- JEI recipe integration.
-- Crafting progression.
-
-### Autocrafting
-
-- Craft job management.
-- Material reservation.
-- Operation journaling and recovery foundations.
-- Machine processor interfaces.
-- Cobblemon cooking integration.
-
-### User Interface
-
-- Crafting terminals.
-- Network interfaces.
-- Storage management screens.
-- Player-facing configuration and information.
-
-## Technology Stack
-
-| Technology | Purpose |
+| Role | Credit |
 |---|---|
-| Java 21 | Main programming language and target bytecode |
-| Fabric | Minecraft modding platform |
-| Gradle | Build automation |
-| Git | Version control |
-| GitHub Actions | Continuous integration |
-| Python | Automated validation and auditing |
-| Cobblemon API | Optional integration |
+| Original project | **SCC – Super Cool Calculator** |
+| Original creator | **XxRonaldxX** |
+| Original platform | NeoForge, Minecraft 1.21.1 |
+| Original license | MIT |
+| Fabric port and adaptation | **Cauê Teles** |
 
-## Development & Validation
+Confirmed links for the original work:
 
-The project uses automated build processes, regression tests and structural audits to verify the port.
+- Source and issue tracker: https://github.com/xXxRonaldxXx/SuperCoolCalculator
+- CurseForge page listed by the original project: https://www.curseforge.com/minecraft/mc-mods/scc-super-cool-calculator
 
-Documented validation includes:
+All original authorship remains with XxRonaldxX. No partnership, personal authorization or official support is claimed.
 
-- Successful Gradle build.
-- Automated regression test suite.
-- Resource and registry audits.
-- Recipe integrity checks.
-- Cobblemon binary API verification.
-- Headless Fabric server initialization.
-- Modded server initialization with selected dependencies.
+## 3. Goal and Scope
 
-### Current Limitations
+The goal is to preserve the original mod's core ideas while rebuilding the platform-specific layers for Fabric. The port focuses on the non-combat subset and is **not** a complete one-to-one restoration of every upstream feature.
 
-Passing automated tests and server initialization does not mean every feature is fully functional in a playable Minecraft world.
+Target environment:
 
-Client-side interaction, complete gameplay validation, machine processing, network behavior and several integrations still require further testing.
+- Minecraft **1.21.1**
+- Java **21** bytecode target
+- Fabric Loader **0.19.5+** and Fabric API **0.116.18+**
+- Cobblemon **1.8.4** / Cobbleverse **1.8.0** used as the compatibility profile
+- Optional integrations suggested in metadata: JEI, EMI, Jade and Accessories
 
-The project must therefore be considered **under active development**, not a complete or production-ready release.
+## 4. Storage Systems
 
-## Artificial Intelligence-Assisted Development
+The source includes item storage blocks, tiered storage upgrades and storage connectors, with registration data and recipes for the available tiers. The data set was checked statically for valid registrations and recipe references.
 
-AI-assisted programming tools are used as part of the development workflow, including OpenCode and coding assistants.
+Runtime item, fluid and energy storage transactions have not been exercised in a playable world.
 
-They support code analysis, implementation, documentation and review.
+## 5. Network and Cable Infrastructure
 
-Generated suggestions are reviewed and checked against project requirements and automated tests before being incorporated.
+The port includes cable blocks, a cable bus, connectors, network blocks and wireless endpoints. The published data uses the registered `scc:network_cable` identifier, and static audits reported no broken SCC cable references.
 
-## License & Attribution
+Live network traversal, transfer behavior and power distribution are not gameplay-validated.
 
-The original SCC project is distributed under the MIT License.
+## 6. Recipe System
 
-This port preserves the original author's attribution and applicable license notice.
+The active data set contains recipes for shaped, shapeless, storage-upgrade and facade entries. Recipe registration, ingredient handling and compatibility helpers are included in the source.
 
-Original work:
-**XxRonaldxX — SCC: Super Cool Calculator**
+JEI and EMI are optional integration points; their runtime behavior was not verified in a client session.
 
-Port and adaptation:
-**Cauê Teles — SCC Fabric**
+## 7. Autocrafting
 
-For the exact license terms, see the `LICENSE` file.
+The source includes scheduling, journaling, material reservation, save barriers and recovery-related infrastructure. Invariant checks were applied to the ordering and durability rules during development.
 
-## Disclaimer
+No complete end-to-end autocrafting job was executed in a real Minecraft world.
 
-SCC Fabric is an unofficial, independently maintained port.
+## 8. Cobblemon Integration
 
-It is not affiliated with, endorsed by or officially supported by XxRonaldxX.
+An SCC machine processor for the Cobblemon Campfire Pot is implemented through the project's processor contract, using `SavedData` for operation state and reflection for compatibility with the Cobblemon API. The Cobblemon 1.8.4 API was checked against the binary artifact during development.
 
-All original concepts, work and applicable intellectual property remain credited to their respective creators.
+No in-game cooking or Campfire Pot interaction was performed. Known save-path limitations remain: there is no fsync or atomic transaction guarantee, and journals above the configured maximum can be lost when loading.
 
-The purpose of this repository is to document and develop an independent compatibility adaptation for the Fabric platform.
+## 9. Interfaces and Terminals
+
+Terminal, menu and screen classes and their recipe coverage are present in the source. GUI opening, synchronization and player interaction were not tested with a connected client.
+
+## 10. Technology Stack
+
+| Technology | Use |
+|---|---|
+| Java 21 | Language and bytecode target |
+| Fabric Loader / Fabric API | Mod runtime |
+| Fabric Loom / Gradle | Build and dependency tooling |
+| Minecraft 1.21.1 mappings | Development mappings |
+| Cobblemon 1.8.4 | Optional Campfire Pot integration |
+| JEI / EMI / Jade / Accessories | Optional compatibility points |
+| Python and PowerShell | Static validation harnesses used during development |
+
+## 11. Development and Validation
+
+Development used isolated worktrees, automated static harnesses and headless server startup checks. Recorded results include:
+
+- A successful Gradle build in the private development tree, with Java 21 release targeting.
+- 71 automated harnesses and 6 static audits, all reporting zero failures.
+- Headless Fabric startup reaching `Done`, with no broken SCC tags or invalid cable references.
+- Partial modded headless startup with a reduced mod set; the remaining messages were attributed to upstream Cobblemon data fixers.
+
+These are build-time and headless checks only. They do **not** constitute gameplay validation.
+
+## 12. Tool-Assisted Development
+
+AI-assisted coding tools, including OpenCode and coding assistants, were used to support code analysis, implementation, documentation and review. Suggestions were reviewed and checked against the project's requirements and automated checks before incorporation.
+
+The work remains a human-directed port and adaptation; AI tools are not credited as the authors of the original project.
+
+## 13. Building from Source
+
+Clone the repository and run the Gradle wrapper:
+
+```powershell
+.\gradlew.bat build
+```
+
+```bash
+./gradlew build
+```
+
+The build script targets Java 21 bytecode and, on `check`, resolves the Cobblemon API artifact from Modrinth to verify binary API compatibility. No third-party JARs or bytecode dumps are committed to this repository.
+
+## 14. Current Limitations
+
+- No real client, player-connected world or GUI session was used for validation.
+- Crafting, storage transactions, cable networking, wireless behavior and Cobblemon cooking remain untested in gameplay.
+- The optional JEI, EMI, Jade and Accessories integrations, and the full Cobbleverse modpack profile, were not runtime-verified.
+- The upstream Cobblemon data-fixer messages observed in a partial modded startup are external to SCC.
+- **Source completeness:** this clean publication intentionally excludes original compiled bytecode that the private development build used as a compile-time dependency for a small set of core stack-key, item-graph and analysis-job helpers. Equivalent Java source for those helpers is not included, so a fresh checkout does not compile until that source is supplied. This is a known limitation of the public source tree.
+- The project is under active development and is not a production-ready release.
+
+## 15. License and Attribution
+
+The original SCC project is licensed under the MIT License. The original copyright notice, `Copyright (c) 2026 XxRonaldxX`, is preserved in the [LICENSE](LICENSE) file and in the mod metadata.
+
+Bundled fonts are distributed under the SIL Open Font License 1.1; their notices are included in `src/main/resources/assets/scc/font/licenses/`.
+
+Port and adaptation: **Cauê Teles**.
+
+## 16. Disclaimer
+
+SCC Fabric is an unofficial, independently maintained adaptation. It is not affiliated with, endorsed by or officially supported by XxRonaldxX. All original concepts and applicable intellectual property remain credited to their respective creators.

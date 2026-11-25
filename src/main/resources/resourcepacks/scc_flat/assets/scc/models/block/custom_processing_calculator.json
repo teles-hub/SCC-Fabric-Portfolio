@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/custom_processing_calculator_basic_side_l",
+    "north": "scc:block/custom_processing_calculator_basic_front",
+    "south": "scc:block/custom_processing_calculator_basic_back",
+    "west": "scc:block/custom_processing_calculator_basic_side_l",
+    "east": "scc:block/custom_processing_calculator_basic_side_r",
+    "up": "scc:block/custom_processing_calculator_basic_top",
+    "down": "scc:block/custom_processing_calculator_basic_back"
+  }
+}

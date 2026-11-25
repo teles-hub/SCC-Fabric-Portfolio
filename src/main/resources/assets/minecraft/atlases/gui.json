@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {
+      "type": "scc:block_designs",
+      "dir": "gui/sprites"
+    }
+  ]
+}

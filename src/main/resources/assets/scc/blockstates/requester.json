@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "scc:block/requester" },
+    "facing=east": { "model": "scc:block/requester", "y": 90 },
+    "facing=south": { "model": "scc:block/requester", "y": 180 },
+    "facing=west": { "model": "scc:block/requester", "y": 270 }
+  }
+}

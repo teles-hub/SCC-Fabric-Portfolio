@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/stellar_distributor"
+    },
+    "active=true": {
+      "model": "scc:block/stellar_distributor_active"
+    }
+  }
+}

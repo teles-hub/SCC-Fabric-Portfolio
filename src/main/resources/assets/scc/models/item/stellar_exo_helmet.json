@@ -1,0 +1,79 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "scc:item/stellar_exo_helmet_base"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "scc:tier": 0.09
+      },
+      "model": "scc:item/stellar_exo_helmet_red_dwarf"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19
+      },
+      "model": "scc:item/stellar_exo_helmet_yellow_star"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29
+      },
+      "model": "scc:item/stellar_exo_helmet_blue_giant"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39
+      },
+      "model": "scc:item/stellar_exo_helmet_neutron_star"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49
+      },
+      "model": "scc:item/stellar_exo_helmet_singularity"
+    },
+    {
+      "predicate": {
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_exo_helmet_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.09,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_exo_helmet_red_dwarf_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.19,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_exo_helmet_yellow_star_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.29,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_exo_helmet_blue_giant_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.39,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_exo_helmet_neutron_star_design"
+    },
+    {
+      "predicate": {
+        "scc:tier": 0.49,
+        "scc:designed": 1
+      },
+      "model": "scc:item/stellar_exo_helmet_singularity_design"
+    }
+  ]
+}

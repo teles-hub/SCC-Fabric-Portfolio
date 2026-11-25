@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "slots=4": {
+      "model": "scc:block/constellation_pedestal"
+    },
+    "slots=5": {
+      "model": "scc:block/constellation_pedestal"
+    },
+    "slots=6": {
+      "model": "scc:block/constellation_pedestal"
+    }
+  }
+}

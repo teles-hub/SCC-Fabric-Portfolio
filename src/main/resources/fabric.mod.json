@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "scc",
+  "version": "${version}",
+  "name": "SCC - Super Cool Calculator",
+  "description": "Recipe analysis, logistics network, item/fluid/energy storage, and autocrafting.",
+  "authors": ["XxRonaldxX"],
+  "contact": {
+    "issues": "https://github.com/xXxRonaldxXx/SuperCoolCalculator/issues"
+  },
+  "license": "MIT",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["de.scc.calculator.SuperCoolCalculator"],
+    "client": ["de.scc.calculator.client.SuperCoolCalculatorClient"]
+  },
+  "mixins": ["scc.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.116.18"
+  },
+  "suggests": {
+    "cobblemon": ">=1.8.4",
+    "emi": "*",
+    "jei": "*",
+    "jade": "*",
+    "accessories": ">=1.1.0-beta.54"
+  }
+}

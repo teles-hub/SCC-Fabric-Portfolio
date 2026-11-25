@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","category":"misc","pattern":["ITI"],"key":{"I":{"item":"minecraft:iron_ingot"},"T":{"item":"scc:terminal"}},"result":{"id":"scc:crafting_terminal","count":1}}

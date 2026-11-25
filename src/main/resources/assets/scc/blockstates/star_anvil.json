@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "scc:block/star_anvil"
+    },
+    "facing=west": {
+      "model": "scc:block/star_anvil",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "scc:block/star_anvil",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "scc:block/star_anvil",
+      "y": 270
+    }
+  }
+}

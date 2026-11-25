@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "scc:block/constructor"
+    },
+    "facing=east": {
+      "model": "scc:block/constructor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scc:block/constructor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scc:block/constructor",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "scc:block/constructor",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "scc:block/constructor",
+      "x": 90
+    }
+  }
+}

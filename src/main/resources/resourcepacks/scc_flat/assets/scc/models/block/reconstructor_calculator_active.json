@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/reconstructor_calculator_basic_side_l",
+    "north": "scc:block/reconstructor_calculator_basic_front_active",
+    "south": "scc:block/reconstructor_calculator_basic_back_active",
+    "west": "scc:block/reconstructor_calculator_basic_side_l_active",
+    "east": "scc:block/reconstructor_calculator_basic_side_r_active",
+    "up": "scc:block/reconstructor_calculator_basic_top_active",
+    "down": "scc:block/reconstructor_calculator_basic_back_active"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/processing_calculator_yellow_star_side_l",
+    "north": "scc:block/processing_calculator_yellow_star_front_active",
+    "south": "scc:block/processing_calculator_yellow_star_back_active",
+    "west": "scc:block/processing_calculator_yellow_star_side_l_active",
+    "east": "scc:block/processing_calculator_yellow_star_side_r_active",
+    "up": "scc:block/processing_calculator_yellow_star_top_active",
+    "down": "scc:block/processing_calculator_yellow_star_back"
+  }
+}

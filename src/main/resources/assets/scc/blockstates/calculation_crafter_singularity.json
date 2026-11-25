@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/calculation_crafter_singularity"
+    },
+    "active=true": {
+      "model": "scc:block/calculation_crafter_singularity_active"
+    }
+  }
+}

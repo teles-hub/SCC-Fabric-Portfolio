@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "create:item_drain", "required": false },
+    { "id": "energizedpower:fluid_drainer", "required": false }
+  ]
+}

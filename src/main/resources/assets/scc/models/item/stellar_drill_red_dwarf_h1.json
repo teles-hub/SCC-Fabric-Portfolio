@@ -1,0 +1,18 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "scc:item/gear3d/drill_red_dwarf_h1"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "scc:item/stellar_drill_red_dwarf"
+      }
+    }
+  },
+  "textures": {
+    "particle": "scc:item/stellar_drill_red_dwarf"
+  }
+}

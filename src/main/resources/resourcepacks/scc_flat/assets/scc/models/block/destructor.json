@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/destructor_front",
+    "north": "scc:block/destructor_front",
+    "south": "scc:block/destructor",
+    "east": "scc:block/destructor",
+    "west": "scc:block/destructor",
+    "up": "scc:block/destructor_top",
+    "down": "scc:block/destructor_bottom"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/advanced_processing_calculator_red_dwarf_side_l",
+    "north": "scc:block/advanced_processing_calculator_red_dwarf_front",
+    "south": "scc:block/advanced_processing_calculator_red_dwarf_back",
+    "west": "scc:block/advanced_processing_calculator_red_dwarf_side_l",
+    "east": "scc:block/advanced_processing_calculator_red_dwarf_side_r",
+    "up": "scc:block/advanced_processing_calculator_red_dwarf_top",
+    "down": "scc:block/advanced_processing_calculator_red_dwarf_back"
+  }
+}

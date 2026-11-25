@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "formed=false": {
+   "model": "scc:block/sky_harvester"
+  },
+  "formed=true": {
+   "model": "scc:block/star_forge/hidden"
+  }
+ }
+}

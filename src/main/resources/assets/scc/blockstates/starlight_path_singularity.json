@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "scc:block/starlight_path_singularity"
+    },
+    "type=top": {
+      "model": "scc:block/starlight_path_singularity_top"
+    },
+    "type=double": {
+      "model": "scc:block/starlight_path_singularity_double"
+    }
+  }
+}

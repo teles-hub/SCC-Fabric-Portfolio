@@ -1,0 +1,6 @@
+{
+  "objects": 4,
+  "speed": 1.0,
+  "energy_per_tick": 1500,
+  "photons_per_tick": 600
+}

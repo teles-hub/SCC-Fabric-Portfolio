@@ -1,0 +1,22 @@
+{
+  "parent": "scc:block/storage_connector_item",
+  "display": {
+    "gui": {
+      "rotation": [
+        25.0,
+        205.0,
+        0.0
+      ],
+      "translation": [
+        -2.39,
+        2.16,
+        0
+      ],
+      "scale": [
+        0.869,
+        0.869,
+        0.869
+      ]
+    }
+  }
+}

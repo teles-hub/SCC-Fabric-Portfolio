@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RER",
+    "EIE",
+    "RDR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "D": {
+      "item": "minecraft:nether_star"
+    },
+    "I": {
+      "item": "scc:infinite_range_upgrade"
+    }
+  },
+  "result": {
+    "id": "scc:dimensional_upgrade",
+    "count": 1
+  }
+}

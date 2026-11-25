@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "scc:block/stellar_observatory"
+    },
+    "active=true": {
+      "model": "scc:block/stellar_observatory_active"
+    }
+  }
+}

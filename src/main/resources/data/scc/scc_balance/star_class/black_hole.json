@@ -1,0 +1,8 @@
+{
+  "fe_per_item": 20000,
+  "fe_per_bucket": 20000,
+  "max_fe_per_tick": 40000,
+  "hawking_minutes": 30,
+  "new_moon_bonus": 1.25,
+  "item_values": {}
+}

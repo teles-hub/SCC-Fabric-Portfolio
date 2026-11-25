@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/transfer_calculator_red_dwarf_side_l",
+    "north": "scc:block/transfer_calculator_red_dwarf_front_active",
+    "south": "scc:block/transfer_calculator_red_dwarf_back_active",
+    "west": "scc:block/transfer_calculator_red_dwarf_side_l_active",
+    "east": "scc:block/transfer_calculator_red_dwarf_side_r_active",
+    "up": "scc:block/transfer_calculator_red_dwarf_top_active",
+    "down": "scc:block/transfer_calculator_red_dwarf_bottom"
+  }
+}

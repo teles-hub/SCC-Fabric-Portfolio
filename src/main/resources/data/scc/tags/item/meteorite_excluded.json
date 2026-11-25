@@ -1,0 +1,71 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ancient_debris",
+    "minecraft:netherite_scrap",
+    {
+      "id": "#c:ores/netherite_scrap",
+      "required": false
+    },
+    {
+      "id": "#c:ores/allthemodium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/vibranium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/unobtainium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/allthemodium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/vibranium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/unobtainium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/draconium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/awakened_draconium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/draconium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/inferium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/prosperity",
+      "required": false
+    },
+    {
+      "id": "#c:ores/soulium",
+      "required": false
+    },
+    {
+      "id": "allthemodium:raw_allthemodium",
+      "required": false
+    },
+    {
+      "id": "allthemodium:raw_vibranium",
+      "required": false
+    },
+    {
+      "id": "allthemodium:raw_unobtainium",
+      "required": false
+    }
+  ]
+}

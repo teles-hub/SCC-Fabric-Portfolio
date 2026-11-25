@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "scc:block/creative_storage_side",
+    "north": "scc:block/creative_storage_front",
+    "south": "scc:block/creative_storage_back",
+    "west": "scc:block/creative_storage_side",
+    "east": "scc:block/creative_storage_side",
+    "up": "scc:block/creative_storage_top",
+    "down": "scc:block/creative_storage_back"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "scc:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "RCR",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "scc:soul_storage"
+    }
+  },
+  "result": {
+    "id": "scc:soul_storage_red_dwarf",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "fill=0": {
+      "model": "scc:block/item_storage_neutron_star"
+    },
+    "fill=1": {
+      "model": "scc:block/item_storage_neutron_star_fill1"
+    },
+    "fill=2": {
+      "model": "scc:block/item_storage_neutron_star_fill2"
+    },
+    "fill=3": {
+      "model": "scc:block/item_storage_neutron_star_fill3"
+    },
+    "fill=4": {
+      "model": "scc:block/item_storage_neutron_star_fill4"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "scc:block/item_storage_neutron_star_top",
+    "bottom": "scc:block/item_storage_neutron_star_bottom",
+    "side": "scc:block/item_storage_neutron_star_fill4"
+  }
+}

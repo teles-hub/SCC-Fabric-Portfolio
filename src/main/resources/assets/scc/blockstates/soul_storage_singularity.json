@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "fill=0": {
+      "model": "scc:block/soul_storage_singularity"
+    },
+    "fill=1": {
+      "model": "scc:block/soul_storage_singularity_fill1"
+    },
+    "fill=2": {
+      "model": "scc:block/soul_storage_singularity_fill2"
+    },
+    "fill=3": {
+      "model": "scc:block/soul_storage_singularity_fill3"
+    },
+    "fill=4": {
+      "model": "scc:block/soul_storage_singularity_fill4"
+    }
+  }
+}

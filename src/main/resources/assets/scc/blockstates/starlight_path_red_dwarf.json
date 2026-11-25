@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "scc:block/starlight_path_red_dwarf"
+    },
+    "type=top": {
+      "model": "scc:block/starlight_path_red_dwarf_top"
+    },
+    "type=double": {
+      "model": "scc:block/starlight_path_red_dwarf_double"
+    }
+  }
+}

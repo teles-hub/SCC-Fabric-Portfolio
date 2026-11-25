@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "scc:block/starlight_path_blue_giant"
+    },
+    "type=top": {
+      "model": "scc:block/starlight_path_blue_giant_top"
+    },
+    "type=double": {
+      "model": "scc:block/starlight_path_blue_giant_double"
+    }
+  }
+}
