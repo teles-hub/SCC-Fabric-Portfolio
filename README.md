@@ -8,7 +8,7 @@
 [![Fabric](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)](https://fabricmc.net/)
 [![Java](https://img.shields.io/badge/Java-21-orange)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-In%20development-yellow)](#current-limitations)
+[![Status](https://img.shields.io/badge/Status-In%20development-yellow)](#14-current-limitations)
 
 ## 1. About the Project
 
