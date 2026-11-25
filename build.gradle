@@ -44,13 +44,13 @@ dependencies {
 
 tasks.register('verifyCobblemonBinaryApi') {
     group = 'verification'
-    description = 'Inspects the exact Cobblemon 1.8.4 Fabric JAR using JDK 21 javap.'
+    description = 'Inspects the exact Cobblemon 1.8.4 Fabric JAR with javap from the JDK running Gradle.'
     inputs.files(configurations.cobblemonBinaryApi)
     doLast {
         def cobblemonJar = configurations.cobblemonBinaryApi.singleFile
         def javapName = org.gradle.internal.os.OperatingSystem.current().isWindows() ? 'javap.exe' : 'javap'
         def javap = new File(System.getProperty('java.home'), "bin/${javapName}")
-        if (!javap.isFile()) throw new GradleException("javap not found in Java 21 toolchain: ${javap}")
+        if (!javap.isFile()) throw new GradleException("javap not found in the active JDK: ${javap}")
 
         def inspect = { String className ->
             def process = new ProcessBuilder(javap.absolutePath, '-classpath', cobblemonJar.absolutePath, '-p', '-s', className)

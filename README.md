@@ -144,7 +144,7 @@ Resources under `src/main/resources` contain mod metadata, registrations, recipe
 
 ### Reproducible verification
 
-The commands below were executed from a fresh clone of the public repository. `build` compiles all sources and runs `check`; `check` depends on `verifyCobblemonBinaryApi`, which downloads the Cobblemon 1.8.4 JAR from Modrinth into the Gradle cache and uses the local `javap` binary to assert 13 method/field signatures. The downloaded JAR is an inspection-only dependency and is never packaged into the mod JAR.
+The commands below were executed from a fresh clone of the public repository. `build` compiles all sources and runs `check`; `check` depends on `verifyCobblemonBinaryApi`, which downloads the Cobblemon 1.8.4 JAR from Modrinth into the Gradle cache and uses the local `javap` binary to assert 14 method/field signatures. The downloaded JAR is an inspection-only dependency and is never packaged into the mod JAR.
 
 ```powershell
 .\gradlew.bat build --console=plain --no-daemon
@@ -154,7 +154,7 @@ The commands below were executed from a fresh clone of the public repository. `b
 ./gradlew build --console=plain --no-daemon
 ```
 
-Observed result in this checkout: `BUILD SUCCESSFUL in 1m 57s`, 8 actionable tasks executed, including `compileJava`, `jar`, `remapJar`, `check` and the 13 Cobblemon binary API assertions. The build machine had JDK 27 installed; Gradle still compiled with `options.release = 21`. A GitHub Actions workflow now performs the same build on `main` with JDK 27 (required by the Gradle toolchain resolution); game-world validation is still absent.
+Observed result in this checkout: `BUILD SUCCESSFUL in 1m 57s`, 8 actionable tasks executed, including `compileJava`, `jar`, `remapJar`, `check` and the 14 Cobblemon binary API assertions. The build machine had JDK 27 installed; Gradle still compiled with `options.release = 21`. A GitHub Actions workflow now performs the same build on `main` with JDK 27 (the runner's default JDK; bytecode target stays Java 21 via `options.release = 21`); game-world validation is still absent.
 
 ## 14. Current Limitations
 
